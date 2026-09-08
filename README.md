@@ -11,7 +11,7 @@ Below, you will find our complete codebase, electrical schematics, and the engin
 
 **Team Members:**<br>
    - *Kyron Chen* Grade 8 of Grace Christian College<br>
-   contact - email chen.kyronemmanuel@grace.gcc.edu.ph
+   contact - chen.kyronemmanuel@grace.gcc.edu.ph
 
    - *Thomas Yuri* Grade 10 of Grace Christian College<br>
    contact - email
@@ -21,7 +21,7 @@ Below, you will find our complete codebase, electrical schematics, and the engin
 
 **Coaches:**<br>
    - *Warren Ong Pe* <br>
-   contact - email
+   contact - wbongpe@gmail.com
 
    - *Kim Gamboa* <br>
    contact - email <br> <br>
@@ -35,6 +35,7 @@ Below, you will find our complete codebase, electrical schematics, and the engin
 - Environment: Randomized track dimensions and starting direction.<br>
 - Obstacles: None. Pure lane-keeping between inner and outer boundary walls.<br>
 - End State: Halt vehicle immediately after the 3rd lap is registered.<br><br>
+<img width="1920" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/b7905e48-aeb5-42b5-8661-68f35fba2c16" />
 
 **Obstacle Challenge**<br>
 - Objective: Autonomously complete 3 consecutive laps either clockwise or counterclockwise AND execute parallel parking.<br>
@@ -43,21 +44,12 @@ Below, you will find our complete codebase, electrical schematics, and the engin
    -> RED Pillar: Vehicle must evade and pass to the RIGHT side.<br>
    -> GREEN Pillar: Vehicle must evade and pass to the LEFT side.<br>
 - End State: Recognize parking zone post-lap 3 and park within physical limits.<br> <br>
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/50f746c1-f3cb-4a79-80a9-d4d00858b0b0" />
 
 ## Vehicle Photos
 
 ## Performance Videos
 
-## Robot Specifications
-
-|  |  |
-|:----------:|:--------:|
-|Weight:N/A|Lenght:N/A|
-|Camera Voltage:V|Camera Resolution:px|
-Steering Torque:|Drive axle Torque:|
-|Power Consuption:V/hr|Power Capaticty:V|
-|Runtime:|Speed:|
-<br>
 
 ## Repository Structure
 <br>
@@ -81,8 +73,6 @@ Steering Torque:|Drive axle Torque:|
 * [Vehicle Photos](#vehicle-photos)
   <br><br>
 * [Performance Videos](#performance-videos)
-  <br><br>
-* [Robot Specifications](#robot-specifications)
   <br><br>
 * [Repository Structure](#repository-structure)
   <br><br>
@@ -1350,7 +1340,7 @@ We encountered many problems in our old code and we made many improvements since
       </tr>
        <tr>
         <td>Block Avoidance </td>
-        <td></td>
+        <td>Camera sometimes miss seeing the block resulting late or early avoidance</td>
         <td>Find coordinate of block and use the coordinates to find Tangent Angle and hypotenuse </td>
       </tr>
        <tr>
@@ -1360,11 +1350,11 @@ We encountered many problems in our old code and we made many improvements since
       </tr>
        <tr>
         <td>Corner block detection</td>
-        <td></td>
+        <td>when entering a corner the camera acidentaly detects the corner block before the robot turns a corner</td>
         <td>to avoid detecting corner block wehn entering corner section, the robot ignores all blocks after detecting a blue or orange line depending on direction.</td>
       </tr>
        <td>Corner fail safe </td>
-       <td></td>
+       <td>when the ROI fails the detect the wall it will bump to the wall and get stuck</td>
        <td> if the robot does not detect the wall 3 seconds afrer detecting the blue or orange line, the robot will automatically turn.</td>
     </tbody>
   </table>
