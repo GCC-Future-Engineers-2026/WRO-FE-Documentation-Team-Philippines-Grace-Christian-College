@@ -49,10 +49,30 @@ Below, you will find our complete codebase, electrical schematics, and the engin
    -> GREEN Pillar: Vehicle must evade and pass to the LEFT side.<br>
 - End State: Recognize parking zone post-lap 3 and park within physical limits.<br> <br>
 
+## Performance Videos
+### Open Challenge
+https://youtu.be/ZwuP0nenW5A
+
+[![Open Challenge](https://img.youtube.com/vi/ZwuP0nenW5A/maxresdefault.jpg)](https://youtu.be/ZwuP0nenW5A)
+
+### Obstacle Challenge
+https://youtu.be/8cCW-7UHkB4
+
+[![Obstacle Challenge](https://img.youtube.com/vi/8cCW-7UHkB4/maxresdefault.jpg)](https://youtu.be/8cCW-7UHkB4)
 
 ## Vehicle Photos
+<img width="1440" height="1920" alt="ezgif com-speed (1)" src="https://github.com/user-attachments/assets/11457129-ec3f-4706-a249-f6dd9ad00da7" />
 
-## Performance Videos
+<br>
+
+|**Side**|**Image**|
+|---|---|
+| Front | <img width="400" height="533" alt="front" src="https://github.com/user-attachments/assets/b7a12362-cf5d-4367-85f4-56e752d95069" /> |
+| Left | <img width="400" height="533" alt="left" src="https://github.com/user-attachments/assets/7b0c61f3-e9fc-40a5-8cb3-730e2b1ee8da" /> |
+| Right | <img width="400" height="533" alt="right" src="https://github.com/user-attachments/assets/c58fb44a-1969-4d57-b2f3-02ae1a69f59e" /> |
+| Top | <img width="400" height="533" alt="top" src="https://github.com/user-attachments/assets/0aeccebc-55cc-45fe-89a2-01d49ce54fe2" /> |
+| Bottom | <img width="400" height="533" alt="bottom" src="https://github.com/user-attachments/assets/705e4831-9f87-46c8-8de6-c944ecbfda97" /> |
+<br>
 
 ## Robot Specifications
 <br>
