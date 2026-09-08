@@ -58,7 +58,7 @@ https://youtu.be/ZwuP0nenW5A
 ### Obstacle Challenge
 https://youtu.be/8cCW-7UHkB4
 
-[![Obstacle Challenge](https://img.youtube.com/vi/8cCW-7UHkB4/maxresdefault.jpg)](https://youtu.be/8cCW-7UHkB4)
+[![Obstacle Challenge](https://img.youtube.com/vi/J8pdirPH2to/maxresdefault.jpg)](https://youtu.be/J8pdirPH2to)
 
 ## Vehicle Photos
 <img width="1440" height="1920" alt="ezgif com-speed (1)" src="https://github.com/user-attachments/assets/11457129-ec3f-4706-a249-f6dd9ad00da7" />
