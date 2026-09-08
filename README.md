@@ -53,7 +53,7 @@ Below, you will find our complete codebase, electrical schematics, and the engin
 ### Open Challenge
 https://youtu.be/ZwuP0nenW5A
 
-[![Open Challenge](https://img.youtube.com/vi/ZwuP0nenW5A/maxresdefault.jpg)](https://youtu.be/ZwuP0nenW5A)
+[![Open Challenge](https://img.youtube.com/vi/6slckvYD6d4/maxresdefault.jpg)](https://youtu.be/6slckvYD6d4)
 
 ### Obstacle Challenge
 https://youtu.be/8cCW-7UHkB4
