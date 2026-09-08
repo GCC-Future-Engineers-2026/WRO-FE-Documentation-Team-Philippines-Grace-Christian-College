@@ -310,7 +310,8 @@ To resolve this kinematic instability, the rear drivetrain was redesigned to hav
 <img width="450" alt="75_1x" src="https://github.com/user-attachments/assets/cdbd6d95-8013-4114-bb5a-e23b94ca078a" />
 <img width="450" alt="76_1x" src="https://github.com/user-attachments/assets/27add380-357b-4a66-9270-c85a163070b8" />
 <img width="450" alt="77_1x" src="https://github.com/user-attachments/assets/1f4ce2c3-d6b7-4512-8104-bb9cd7ad05de" />
-<br><br><br>
+<br><br>
+
 ## 1.5.2 Complete Component List
 
 ### Lego Components
