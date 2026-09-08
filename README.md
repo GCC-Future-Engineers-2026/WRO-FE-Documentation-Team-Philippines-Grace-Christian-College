@@ -290,7 +290,24 @@ To resolve this kinematic instability, the rear drivetrain was redesigned to hav
 <img width="450" alt="76_1x" src="https://github.com/user-attachments/assets/27add380-357b-4a66-9270-c85a163070b8" />
 <img width="450" alt="77_1x" src="https://github.com/user-attachments/assets/1f4ce2c3-d6b7-4512-8104-bb9cd7ad05de" />
 <br><br><br>
+
 ## 1.5.2 Complete Component List
+|||
+|---|---|
+|<img width="450" alt="1_1x" src="https://github.com/user-attachments/assets/88b5b731-afc8-455a-becd-8c06bee7cdb7" />|<img width="450" alt="2_1x" src="https://github.com/user-attachments/assets/db374f2b-4a62-4b32-805c-266701fe8a74" />|
+|<img width="450" alt="3_1x" src="https://github.com/user-attachments/assets/71e2b83d-0de9-4502-8a2d-ecc36724937c" />|<img width="450" alt="4_1x" src="https://github.com/user-attachments/assets/30c604c0-f577-4057-962e-4ab5ff69ea67" />|
+|<img width="450" alt="5_1x" src="https://github.com/user-attachments/assets/c86d930a-be3a-4409-b099-4ad5d61d6c21" />|<img width="450" alt="6_1x" src="https://github.com/user-attachments/assets/25334bb6-f691-4fc7-9484-64673b4b3884" />|
+|<img width="450" alt="7_1x" src="https://github.com/user-attachments/assets/37afd829-0ee0-4b96-8343-200c7908f326" />|
+|<img width="575" height="437" alt="image" src="https://github.com/user-attachments/assets/0e16b84f-22e2-47ed-8d24-d166199820e2" />
+|OpenMV H7 Camera||
+
+
+
+
+
+
+
+
 
 ## 2.0 Power and Sense Management
 
