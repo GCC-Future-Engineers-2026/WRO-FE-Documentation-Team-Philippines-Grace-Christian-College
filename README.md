@@ -24,32 +24,47 @@ Below, you will find our complete codebase, electrical schematics, and the engin
    contact - wbongpe@gmail.com
 
    - *Kim Gamboa* <br>
-   contact - email <br> <br>
+   contact - kim.kkhg@gmail.com 
+ <br> <br>
 
 
 
 
 ## Challenge Overview
 **Open Challenge**<br>
+<img width="1920" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/b7905e48-aeb5-42b5-8661-68f35fba2c16" />
+<br>
 - Objective: Autonomously complete 3 consecutive laps either clockwise or counterclockwise<br>
 - Environment: Randomized track dimensions and starting direction.<br>
 - Obstacles: None. Pure lane-keeping between inner and outer boundary walls.<br>
 - End State: Halt vehicle immediately after the 3rd lap is registered.<br><br>
-<img width="1920" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/b7905e48-aeb5-42b5-8661-68f35fba2c16" />
 
 **Obstacle Challenge**<br>
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/50f746c1-f3cb-4a79-80a9-d4d00858b0b0" />
+<br>
 - Objective: Autonomously complete 3 consecutive laps either clockwise or counterclockwise AND execute parallel parking.<br>
 - Environment: Randomized track, starting direction, and randomized parking zone.<br>
 - Obstacles: Traffic signs (pillars) dynamically placed inside the driving lanes.<br>
    -> RED Pillar: Vehicle must evade and pass to the RIGHT side.<br>
    -> GREEN Pillar: Vehicle must evade and pass to the LEFT side.<br>
 - End State: Recognize parking zone post-lap 3 and park within physical limits.<br> <br>
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/50f746c1-f3cb-4a79-80a9-d4d00858b0b0" />
+
 
 ## Vehicle Photos
 
 ## Performance Videos
 
+## Robot Specifications
+<br>
+
+| **Measurement** | **Unit** |
+|---|---|
+| Length | 20.0 cm | 
+| Width | 11.9 cm | 
+| Height | 19.5 cm | 
+| Weight | 886 g |
+
+<br>
 
 ## Repository Structure
 <br>
@@ -189,6 +204,12 @@ To complement the rear differential, the vehicle's front steering assembly emplo
 ## 1.3 Powertrain Analysis
 
 ## 1.3.1 Torque and Speed Reasoning
+The powertrain is engineered to balance the torque required to accelerate the vehicle's 886 g mass with the maximum linear velocity needed to achieve competitive lap times.
+
+* **Drive Motor (Large Angular):** The LEGO Large Angular Motor outputs significantly higher torque (approx. 15 Ncm running) compared to the medium variant. This torque is critical to overcome both the internal mechanical friction of the differential gear assembly and the static inertia of the 886 g chassis from a standstill.
+* **Velocity Translation:** Linear speed is dictated by the motor's RPM and the tire circumference. Coupled with the 62.4 mm rear tires, the large motor (running at a nominal ~175 RPM) yields a theoretical top speed of roughly 0.57 m/s. This configuration prioritizes high top speed on open straightaways while maintaining just enough low-end torque to prevent stalling during tight obstacle maneuvering.
+* **Steering Actuation (Medium Angular):** Because the front Ackermann linkage utilizes narrow 14 mm tires to eliminate scrub radius, the steering assembly encounters very little mechanical resistance. Therefore, high torque is unnecessary. The Medium Angular Motor was selected instead for its higher rotational velocity (~250 RPM). This allows the software's PID controller to execute micro-adjustments instantly, drastically reducing steering latency during wall-centering and obstacle avoidance.
+<br><br><br>
 
 ## 1.4 Mechanical Tradeoffs and Iterations
    
@@ -290,24 +311,31 @@ To resolve this kinematic instability, the rear drivetrain was redesigned to hav
 <img width="450" alt="76_1x" src="https://github.com/user-attachments/assets/27add380-357b-4a66-9270-c85a163070b8" />
 <img width="450" alt="77_1x" src="https://github.com/user-attachments/assets/1f4ce2c3-d6b7-4512-8104-bb9cd7ad05de" />
 <br><br><br>
-
 ## 1.5.2 Complete Component List
-|||
-|---|---|
-|<img width="450" alt="1_1x" src="https://github.com/user-attachments/assets/88b5b731-afc8-455a-becd-8c06bee7cdb7" />|<img width="450" alt="2_1x" src="https://github.com/user-attachments/assets/db374f2b-4a62-4b32-805c-266701fe8a74" />|
-|<img width="450" alt="3_1x" src="https://github.com/user-attachments/assets/71e2b83d-0de9-4502-8a2d-ecc36724937c" />|<img width="450" alt="4_1x" src="https://github.com/user-attachments/assets/30c604c0-f577-4057-962e-4ab5ff69ea67" />|
-|<img width="450" alt="5_1x" src="https://github.com/user-attachments/assets/c86d930a-be3a-4409-b099-4ad5d61d6c21" />|<img width="450" alt="6_1x" src="https://github.com/user-attachments/assets/25334bb6-f691-4fc7-9484-64673b4b3884" />|
-|<img width="450" alt="7_1x" src="https://github.com/user-attachments/assets/37afd829-0ee0-4b96-8343-200c7908f326" />|
-|<img width="575" height="437" alt="image" src="https://github.com/user-attachments/assets/0e16b84f-22e2-47ed-8d24-d166199820e2" />
-|OpenMV H7 Camera||
 
+### Lego Components
+<img width="249" height="177" alt="Picture7" src="https://github.com/user-attachments/assets/6e5b7dd4-6cb7-47a7-8916-acbbf04c8bb7" />
+<img width="220" height="156" alt="Picture6" src="https://github.com/user-attachments/assets/15a6240f-c532-45d9-8d8c-6f6a3b5269b0" />
+<img width="244" height="173" alt="Picture5" src="https://github.com/user-attachments/assets/556f400a-c753-41cd-90a4-45a5cdf0bc10" />
+<img width="259" height="183" alt="Picture4" src="https://github.com/user-attachments/assets/3a29a269-a642-411c-980e-7a809dcd8b1f" />
+<img width="230" height="161" alt="Picture3" src="https://github.com/user-attachments/assets/74b8dfe5-9efa-4b74-9200-f134809c2eb6" />
+<img width="220" height="156" alt="Picture2" src="https://github.com/user-attachments/assets/cd208dd6-7398-4e76-8084-0b48bfbd3bd7" />
+<img width="238" height="169" alt="Picture1" src="https://github.com/user-attachments/assets/9de5f27b-ffba-4bc2-b70f-1837f9cea481" />
+<br>
 
+### Other Components
+<br>
+#### Voltage Regulator <br>
+<img width="205" height="136" alt="Picture10" src="https://github.com/user-attachments/assets/f4aed760-356f-4cb2-9912-dee6fbebd2a8" />
+<br>
 
+#### Wide Angle Lens <br>
+<img width="156" height="145" alt="Picture9" src="https://github.com/user-attachments/assets/28db39ec-c644-4b91-9389-bbdaed96294a" />
+<br>
 
-
-
-
-
+#### DSLONG LED Fill Light <br>
+<img width="159" height="212" alt="Picture8" src="https://github.com/user-attachments/assets/1df6cec3-565e-4f8b-8302-e6c1c7018a47" />
+<br>
 
 ## 2.0 Power and Sense Management
 
@@ -324,25 +352,28 @@ The LEGO SPIKE hub battery is a rechargeable lithium-ion battery designed for us
 * **Standard Discharge:** 0.2C (~420 mA)
 * **Standard Charge Current:** 500 mA (~3 hour charging time)
 * **Weight:** 110 g (~6.7 oz)
-<br><br>
+
 ### **Reason For Selection**
 * **Regulated and Stable Voltage Output -** The SPIKE Prime battery features integrated power management circuitry that keeps a steady nominal voltage (7.3 V).
-* **Lightweight -** The battery itself is 110 g, which helps our
-<br><br><br><br>
+* **Lightweight Footprint:** The battery itself is 110 g, which helps minimize the overall mass of the robot (886 g). Lower weight reduces the inertial load on the powertrain, allowing for sharper cornering and faster acceleration without causing wheel slip.
+* **Seamless Integration:** It slots directly into the Hub, avoiding the need for heavy, messy external wiring for the primary processing and motor controls. This keeps the chassis compact and the center of gravity predictable.
+<br><br><br>
 
 ## 2.1.2 External Power
-&emsp; 
-
+&emsp; <img width="474" height="703" alt="download" src="https://github.com/user-attachments/assets/260204ea-6f0d-4b89-9f3c-6e23670fbb9b" />
+<br>
 Three 1.5 V Lithium Ion Batteries in series.
-
+<br>
 ### **Specifications:**
 * **Capacity:** 2700 mAh
 * **Normal Voltage:** 4.5 V 
 * **Weight:** 110 g (~6.7 oz)
-<br><br>
+
 ### **Reason For Selection**
-* **Additional Capacity:** We chose to introduce external batteries so we do not deplete the capacity of the SPIKE PRIME Hub battery too quickly.
-<br><br><br><br>
+* **Isolated High-Draw Circuit:** The OpenMV H7 Plus (up to 250 mA) and the DSLONG LED Fill Light (~1556 mA) draw a massive combined current. Routing this load through the SPIKE Hub would exceed its standard discharge limits, risking sudden voltage sags, hub resets, or severe disruption to the motor encoders.
+* **Consistent Vision Lighting:** Supplying an isolated 4.5 V to the LED fill light ensures constant, flicker-free illumination. Because the OpenMV camera is configured with locked auto-exposure and fixed white balance, any dimming caused by the drive motors drawing shared power would instantly corrupt the camera's color thresholding.
+* **Additional Capacity & Hub Preservation:** Offloading the vision and lighting systems entirely from the SPIKE battery ensures the Hub's capacity is strictly reserved for locomotion and calculation, guaranteeing consistent speed and lap times across multiple consecutive runs.
+<br><br><br>
 
 ## 2.2 Wiring & Schematics
 
