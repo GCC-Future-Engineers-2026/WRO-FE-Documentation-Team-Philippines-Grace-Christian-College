@@ -336,33 +336,40 @@ To resolve this kinematic instability, the rear drivetrain was redesigned to hav
 ## 1.5.2 Complete Component List
 
 ### Lego Components
-<img width="1440" height="1024" alt="Picture7" src="https://github.com/user-attachments/assets/6e5b7dd4-6cb7-47a7-8916-acbbf04c8bb7" />
-<img width="1440" height="1021" alt="Picture6" src="https://github.com/user-attachments/assets/15a6240f-c532-45d9-8d8c-6f6a3b5269b0" />
-<img width="1440" height="1021" alt="Picture5" src="https://github.com/user-attachments/assets/556f400a-c753-41cd-90a4-45a5cdf0bc10" />
-<img width="1440" height="1017" alt="Picture4" src="https://github.com/user-attachments/assets/3a29a269-a642-411c-980e-7a809dcd8b1f" />
-<img width="1440" height="1008" alt="Picture3" src="https://github.com/user-attachments/assets/74b8dfe5-9efa-4b74-9200-f134809c2eb6" />
-<img width="1440" height="1021" alt="Picture2" src="https://github.com/user-attachments/assets/cd208dd6-7398-4e76-8084-0b48bfbd3bd7" />
-<img width="1440" height="1022" alt="Picture1" src="https://github.com/user-attachments/assets/9de5f27b-ffba-4bc2-b70f-1837f9cea481" />
+<img width="1440" height="1024" alt="Picture7" src="https://github.com/user-attachments/assets/012e493a-47a0-4b4b-9e71-5d446988dcfb" />
+<img width="1440" height="1021" alt="Picture6" src="https://github.com/user-attachments/assets/3a46e1a0-72a6-4392-975d-e46c169e90af" />
+<img width="1440" height="1021" alt="Picture5" src="https://github.com/user-attachments/assets/af129b96-11ad-4494-bd68-36f0c6c9bca8" />
+<img width="1440" height="1017" alt="Picture4" src="https://github.com/user-attachments/assets/76bf120f-a79b-4e04-bc3b-0912f05189f0" />
+<img width="1440" height="1008" alt="Picture3" src="https://github.com/user-attachments/assets/1f7a261e-23f2-4c93-8c18-6e7933e22516" />
+<img width="1440" height="1021" alt="Picture2" src="https://github.com/user-attachments/assets/78e69178-5a95-4f12-92d5-7b0fdb9b774c" />
+<img width="1440" height="1022" alt="Picture1" src="https://github.com/user-attachments/assets/2855d29b-dfa2-4fad-b5ef-b807ef798764" />
 <br>
 
 ### Other Components
-<br>
+
 #### Voltage Regulator <br>
-<img width="205" height="136" alt="Picture10" src="https://github.com/user-attachments/assets/f4aed760-356f-4cb2-9912-dee6fbebd2a8" />
+<img width="474" height="314" alt="Picture10" src="https://github.com/user-attachments/assets/f4aed760-356f-4cb2-9912-dee6fbebd2a8" />
+<br>
+
+#### OpenMV H7 Plus <br>
+<img width="474" height="632" alt="Picture8" src="https://github.com/user-attachments/assets/1df6cec3-565e-4f8b-8302-e6c1c7018a47" />
 <br>
 
 #### Wide Angle Lens <br>
-<img width="156" height="145" alt="Picture9" src="https://github.com/user-attachments/assets/28db39ec-c644-4b91-9389-bbdaed96294a" />
+<img width="474" height="440" alt="Picture9" src="https://github.com/user-attachments/assets/28db39ec-c644-4b91-9389-bbdaed96294a" />
 <br>
 
 #### DSLONG LED Fill Light <br>
-<img width="159" height="212" alt="Picture8" src="https://github.com/user-attachments/assets/1df6cec3-565e-4f8b-8302-e6c1c7018a47" />
+<img width="474" height="632" alt="ezgif com-speed (2)" src="https://github.com/user-attachments/assets/528c48b2-6d3e-4abe-958c-c94f10d74f76" />
 <br>
 
-#### 3D printed Camera case<br>
-<img width="30%" alt="798414015_1753964069870121_956414356854542009_n" src="https://github.com/user-attachments/assets/9abb7506-9384-43ff-b550-2dec25369634" />
+#### 3D printed Camera case <br>
+<img width="60%" alt="798414015_1753964069870121_956414356854542009_n" src="https://github.com/user-attachments/assets/9abb7506-9384-43ff-b550-2dec25369634" />
+<br>
 
-
+#### Li-ion Batteries <br>
+<img width="474" height="703" alt="IMG_3688" src="https://github.com/user-attachments/assets/638c4ae1-9087-4113-a749-88f7b0169a85" />
+<br>
 
 ## 2.0 Power and Sense Management
 
