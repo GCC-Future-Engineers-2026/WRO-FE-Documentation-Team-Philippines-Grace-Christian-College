@@ -1,7 +1,7 @@
 ## Team Introduction
 
-WRO Future Engineers 2026: Team Grace Christian College 🏎️
-Welcome to the official engineering repository for Team Grace Christian College from The Philippines.
+WRO Future Engineers 2026: Grace Robotics Team Engineers of Grace Christian College. 
+Welcome to the official engineering repository for Grace Robotics Team Engineers representing the Philippines. 
 
 This repository documents the complete development cycle of our autonomous vehicle, designed from the ground up for the WRO Future Engineers challenge. Our engineering strategy this year focused on lightweight chassis design and high-speed computer vision processing]. By prioritizing [e.g., reliable sensor fusion over complex mechanics], we built a robot capable of navigating dynamic obstacle courses with high precision and consistent lap times.
 
@@ -34,20 +34,34 @@ Below, you will find our complete codebase, electrical schematics, and the engin
 **Open Challenge**<br>
 <img width="1920" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/b7905e48-aeb5-42b5-8661-68f35fba2c16" />
 <br>
-- Objective: Autonomously complete 3 consecutive laps either clockwise or counterclockwise<br>
-- Environment: Randomized track dimensions and starting direction.<br>
-- Obstacles: None. Pure lane-keeping between inner and outer boundary walls.<br>
-- End State: Halt vehicle immediately after the 3rd lap is registered.<br><br>
+**Objective:** 
+- Autonomously complete 3 consecutive laps either clockwise or counterclockwise<br>
+
+**Environment:**
+- Randomized track dimensions and starting direction.<br>
+
+**Obstacles:**
+- None. Pure lane-keeping between inner and outer boundary walls.<br>
+
+**End State:**
+- Halt vehicle immediately after the 3rd lap is registered.<br><br>
 
 **Obstacle Challenge**<br>
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/50f746c1-f3cb-4a79-80a9-d4d00858b0b0" />
 <br>
-- Objective: Autonomously complete 3 consecutive laps either clockwise or counterclockwise AND execute parallel parking.<br>
-- Environment: Randomized track, starting direction, and randomized parking zone.<br>
-- Obstacles: Traffic signs (pillars) dynamically placed inside the driving lanes.<br>
-   -> RED Pillar: Vehicle must evade and pass to the RIGHT side.<br>
-   -> GREEN Pillar: Vehicle must evade and pass to the LEFT side.<br>
-- End State: Recognize parking zone post-lap 3 and park within physical limits.<br> <br>
+**Objective:** 
+- Autonomously complete 3 consecutive laps either clockwise or counterclockwise AND execute parallel parking.<br>
+
+**Environment:** 
+- Randomized track, starting direction, and randomized parking zone.<br>
+
+**Obstacles:** 
+- Traffic signs (pillars) dynamically placed inside the driving lanes.<br>
+   - RED Pillar: Vehicle must evade and pass to the RIGHT side.<br>
+   - GREEN Pillar: Vehicle must evade and pass to the LEFT side.<br>
+
+**End State:** 
+- Recognize parking zone post-lap 3 and park within physical limits.<br> <br>
 
 ## Performance Videos
 ### Open Challenge
@@ -346,10 +360,6 @@ To resolve this kinematic instability, the rear drivetrain was redesigned to hav
 <br>
 
 ### Other Components
-
-#### Voltage Regulator <br>
-<img width="474" height="314" alt="Picture10" src="https://github.com/user-attachments/assets/f4aed760-356f-4cb2-9912-dee6fbebd2a8" />
-<br>
 
 #### OpenMV H7 Plus <br>
 <img width="474" height="632" alt="Picture8" src="https://github.com/user-attachments/assets/1df6cec3-565e-4f8b-8302-e6c1c7018a47" />
