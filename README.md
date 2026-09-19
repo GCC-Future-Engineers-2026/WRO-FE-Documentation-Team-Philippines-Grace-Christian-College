@@ -1,3 +1,6 @@
+<img width="695" height="107" alt="image" src="https://github.com/user-attachments/assets/9bacafa5-c894-4601-ae50-4c355626589c" />
+
+
 ## Team Introduction
 
 WRO Future Engineers 2026: Grace Robotics Team Engineers of Grace Christian College. 
@@ -441,7 +444,8 @@ The total continuous discharge of the components on the SPIKE PRIME Hub Battery 
 <br><br><br>
 
 ## 2.2.2 External Wiring
-&emsp; <img width="474" height="321" alt="image" src="https://github.com/user-attachments/assets/adc3bb63-2212-42c7-aab8-461524ca5062" />
+&emsp;<img width="635" height="330" alt="image" src="https://github.com/user-attachments/assets/d65136cc-8142-4059-928f-63c5ede7110e" />
+
 <br><br>
 ### **Power Consumption**
 
@@ -1301,6 +1305,20 @@ async def sense_line_color():
         await wait(20)
 ```
 This function converts raw sensor values to colors. Spotting orange(1) tells the system it needs to prepare for a Clockwise corner turn; spotting blue(2) prepares it for a Counter-Clockwise turn.
+```python'
+async def pedestrian_lane():
+    global is_paused
+    while True:
+        if rob_data['lane'] == 1 and is_paused == False:
+            is_paused = True
+            await hub.speaker.beep(1000,500)
+            await wait(500)
+            await hub.speaker.beep(1000,500)
+            await wait(3000)
+            is_paused = False
+            await wait (2000)
+        await wait(20)
+```
 ```python
 async def main():
     await get_out_parking()
@@ -1310,8 +1328,10 @@ async def main():
         update_robot_data(),
         avoid_blocks_and_return_center(),
         sense_line_color(),
-        detect_corner(),
-        ultrasonic_PID(kp=0.003, ki=0.000001, kd=10000.0), 
+        pedestrian_lane(),
+        # detect_corner(),
+        # ultrasonic_PID(kp=0.3, ki=0.000001, kd=100.0), 
+        heading_pid(speed=1000, kp=3.0, kd=20.0),
         motor_controller(),
         race=True        
     )
@@ -1320,6 +1340,7 @@ async def main():
     car.steer(0)
     gc.collect() 
     await wait(500) 
+
 ```
 This function orchestrates everything. The multitask() function allows the robot to do PID, obstacle avoidance, and line checking at the same time. The moment detect_corner() finishes lap 3 (turn 12), the multitasking race ends, and the script moves directly to the final parallel_parking() function.
 <br><br><br>
@@ -1338,11 +1359,11 @@ img_debug = sensor.snapshot()
 A special function tweaks the picture's contrast to make objects stand out clearly from the background. The script checks a small ROI at the top-center of the picture for dark objects. This ROI is used to detect the black corner and tells the robot to turn once it reaches near the corner
 ```python
 img_center = (160, 120)
-img_roi = (5, 110, 310, 125)
+img_roi = (45, 115, 230, 80)
 roi_rect = (img_roi[0], img_roi[1], img_roi[2], img_roi[3])
 roi_left_bottom = (5, 201, 70, 35)
 roi_right_bottom = (245, 201, 70, 35)
-img_roi_corner = (155, 80, 10,40)
+img_roi_corner = (155, 175, 10, 48)
 ```
 If it finds a dark object there, it changes a status number from 0 to 1. Finally, the script puts the object data and the status number into a small group of 4 pieces of information. It sends this packet to the Lego Hub right away before starting over.
 ```python
