@@ -35,7 +35,8 @@ Below, you will find our complete codebase, electrical schematics, and the engin
 
 ## Challenge Overview
 **Open Challenge**<br>
-<img width="1920" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/b7905e48-aeb5-42b5-8661-68f35fba2c16" />
+<img width="623" height="317" alt="image" src="https://github.com/user-attachments/assets/ea68a7f3-e595-4581-95d2-b620d3b4ef73" />
+
 <br>
 **Objective:** 
 - Autonomously complete 3 consecutive laps either clockwise or counterclockwise<br>
@@ -50,7 +51,8 @@ Below, you will find our complete codebase, electrical schematics, and the engin
 - Halt vehicle immediately after the 3rd lap is registered.<br><br>
 
 **Obstacle Challenge**<br>
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/50f746c1-f3cb-4a79-80a9-d4d00858b0b0" />
+<img width="562" height="402" alt="image" src="https://github.com/user-attachments/assets/a47ae2e8-eb51-446b-a51a-4bd333397b83" />
+
 <br>
 **Objective:** 
 - Autonomously complete 3 consecutive laps either clockwise or counterclockwise AND execute parallel parking.<br>
@@ -167,16 +169,22 @@ https://youtu.be/8cCW-7UHkB4
 ## 1.1 Chassis Architecture
    
 ## 1.1.1 Tire Selection
-&emsp; &emsp; **Rear Wheels:** LEGO Technic Tire 62.4 x 20	
+&emsp; &emsp; **Rear Wheels:** 6514 TT Motor Free Wheels (65mm x 14mm)
 
-&emsp; <img width="474" height="474" alt="OIP" src="https://github.com/user-attachments/assets/70aab19b-2eb9-4e7c-9320-6dd2b9ac9914" />
+&emsp; <img width="233" height="212" alt="image" src="https://github.com/user-attachments/assets/8cc320e5-204e-4286-8536-2228655e68e8" />
+
 <br><br>
-   
-The rear wheels are responsible for propelling the mass of the robot and resolving the torque distributed by the differential gear. The 62.4 mm x 20 mm tire was selected to optimize linear velocity and traction. <br>
 
-   * **Kinematic Velocity:** Linear speed is directly proportional to wheel radius. At a fixed maximum motor RPM, the larger 62.4 mm diameter significantly increases the vehicle's top straight-line speed compared to standard 43 mm tires.
+The rear wheels are responsible for propelling the mass of the robot and resolving the torque distributed by the differential gear. The 62.4 mm x 20 mm tire was selected to optimize linear velocity and traction.
+ <br><br>
+**Reasons For Selection:**
 
-   * **Differential Synergy & Contact Patch:** A differential prevents wheel scrub by allowing the outer wheel to spin faster during a turn. However, if a tire lacks grip, the differential will dump all torque into the slipping wheel (path of least resistance), stranding the vehicle. The 20 mm width provides a wide, flat contact patch that guarantees sufficient static friction to keep both wheels anchored, ensuring smooth, continuous torque delivery through corners.
+**Kinematic Velocity**
+Linear speed is directly proportional to wheel radius. At a fixed maximum motor RPM, the larger 62.4 mm diameter significantly increases the vehicle's top straight-line speed compared to standard 43 mm tires.
+
+**Differential Synergy & Contact Patch**
+A differential prevents wheel scrub by allowing the outer wheel to spin faster during a turn. However, if a tire lacks grip, the differential will dump all torque into the slipping wheel (path of least resistance), stranding the vehicle. The 20 mm width provides a wide, flat contact patch that guarantees sufficient static friction to keep both wheels anchored, ensuring smooth, continuous torque delivery through corners.
+
 <br><br><br><br>
 
 &emsp; &emsp; **Front Wheels:** Integrated Wheel 43 x 14 (Part 65834)
